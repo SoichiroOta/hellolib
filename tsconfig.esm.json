@@ -6,12 +6,6 @@
     "declaration": true,
     "declarationMap": true
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "src/bin",
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src"],
+  "exclude": ["src/bin", "node_modules", "dist"]
 }

@@ -11,7 +11,6 @@ import * as path from 'path';
 
 import pkg from './package.json';
 
-
 // Remove scope
 const moduleName = pkg.name.replace(/^@.*\//, '');
 const inputFileName = 'src/index.ts';
@@ -36,7 +35,7 @@ export default [
         file: pkg.browser,
         format: 'iife',
         sourcemap: 'inline',
-        banner
+        banner,
       },
       // minified
       {
@@ -45,10 +44,8 @@ export default [
         format: 'iife',
         sourcemap: 'inline',
         banner,
-        plugins: [
-          pluginTerser(),
-        ],
-      }
+        plugins: [pluginTerser()],
+      },
     ],
     plugins: [
       pluginTypescript(),
