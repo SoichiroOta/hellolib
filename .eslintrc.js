@@ -1,28 +1,28 @@
 module.exports = {
   // 適用する環境
-  "env": {
-    "es6": true,
-    "node": true,
-    "commonjs": true
+  env: {
+    es6: true,
+    node: true,
+    commonjs: true,
   },
   // 構文解析（パーサー）
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
     // モジュール形式のソースコードを用います
-    "sourceType": "module",
+    sourceType: 'module',
     // JS のバージョンは最新とします
-    "ecmaVersion": "latest"
+    ecmaVersion: 'latest',
   },
   // プラグイン
-  "plugins": ["@typescript-eslint"],
+  plugins: ['@typescript-eslint'],
   /**
    *  ルールのインポート
    *  ここでは基本的に 'recommended' に従います
    */
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ]
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+  ],
 };
